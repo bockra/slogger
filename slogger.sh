@@ -10,7 +10,7 @@
 #
 
 #import config
-source slogger.conf
+source `dirname $0`/slogger.conf
 
 function add_2history {
 	echo -e "\n${time}\n${*}\n" >> $history
